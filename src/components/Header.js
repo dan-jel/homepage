@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Sebi from "../images/sebi.jpeg";
-import BlueBack from "../images/blue.jpeg";
-import Sticks from "../images/sticks.jpeg";
 
 import { ReactComponent as EmailIcon } from "../images/icons/email.svg";
 import { ReactComponent as LinkedIcon } from "../images/icons/linked.svg";
@@ -11,24 +9,10 @@ import { ReactComponent as GithubIcon } from "../images/icons/github.svg";
 const Header = () => {
   return (
     <Container>
-      <Navigation>
-        <ul>
-          <li>
-            <NavButton>home</NavButton>
-          </li>
-          <li>
-            <NavButton>projects</NavButton>
-          </li>
-          <li>
-            <NavButton>contact</NavButton>
-          </li>
-        </ul>
-      </Navigation>
-      <Banner>
-        <img src={Sticks} alt="Sticks" />
-      </Banner>
       <RoundImage>
-        <img src={Sebi} alt="profile" />
+        <div>
+          <img src={Sebi} alt="profile" />
+        </div>
       </RoundImage>
       <Info>
         <h1>Daniel Heese</h1>
@@ -51,60 +35,21 @@ const Container = styled.div`
   height: 600px;
 `;
 
-const Banner = styled.div`
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: blue;
-  display: flex;
-  z-index: 1;
-  box-shadow: 0px 0px 15px #000000;
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-`;
-
 const RoundImage = styled.div`
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
-  position: absolute;
+  position: relative;
   top: 150px;
   left: 50%;
   transform: translateX(-50%);
-  overflow: hidden;
-  box-shadow: 5px 5px 15px black;
   z-index: 2;
-  img {
-    width: 100%;
-    height: 100%;
-  }
-`;
-
-const Navigation = styled.div`
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  ul {
-    padding-inline-start: 0;
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    li {
-      padding: 1rem 3rem;
-      font-size: 1.5rem;
-      font-weight: bold;
+  div {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px black;
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 `;
@@ -134,18 +79,6 @@ const Info = styled.div`
       list-style-type: none;
       padding: 0rem 1rem;
     }
-  }
-`;
-
-const NavButton = styled.div`
-  background-color: rgba(255, 255, 255, 0.75);
-  padding: 0.25rem 1rem;
-  border-radius: 2rem;
-  color: #1c488b;
-  :hover {
-    background-image: url(${BlueBack});
-    color: white;
-    cursor: pointer;
   }
 `;
 
