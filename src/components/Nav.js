@@ -17,7 +17,7 @@ const Nav = () => {
 
 const Container = styled(motion.div)`
   overflow-x: hidden;
-  position: relative;
+  position: fixed;
   top: 0;
   z-index: 100;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);

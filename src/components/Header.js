@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Sebi from "../images/sebi.jpeg";
 import Waves from "../images/waves.jpeg";
+import { motion } from "framer-motion";
 
 import { ReactComponent as EmailIcon } from "../images/icons/email.svg";
 import { ReactComponent as LinkedIcon } from "../images/icons/linked.svg";
 import { ReactComponent as GithubIcon } from "../images/icons/github.svg";
 
 const Header = () => {
+  const [Rotation1, setRotation1] = useState(0);
+  const [Rotation2, setRotation2] = useState(0);
+  const [Rotation3, setRotation3] = useState(0);
+
   return (
     <Container>
       <Banner>
@@ -22,13 +27,28 @@ const Header = () => {
         <h2>Front End Developer</h2>
       </ProfileText>
       <Profiles>
-        <HoverDiv>
+        <HoverDiv
+          initial={{ x: 200 }}
+          animate={{ x: 0, rotate: Rotation1 }}
+          onHoverStart={() => setRotation1(Rotation1 + 360)}
+          transition={{ ease: "easeOut" }}
+        >
           <EmailIcon />
         </HoverDiv>
-        <HoverDiv>
+        <HoverDiv
+          initial={{ x: 200 }}
+          animate={{ x: 0, rotate: Rotation2 }}
+          onHoverStart={() => setRotation2(Rotation2 + 360)}
+          transition={{ ease: "linear" }}
+        >
           <LinkedIcon />
         </HoverDiv>
-        <HoverDiv>
+        <HoverDiv
+          initial={{ x: 200 }}
+          animate={{ x: 0, rotate: Rotation3 }}
+          onHoverStart={() => setRotation3(Rotation3 + 360)}
+          transition={{ ease: "linear" }}
+        >
           <GithubIcon />
         </HoverDiv>
       </Profiles>
@@ -36,15 +56,14 @@ const Header = () => {
   );
 };
 
-const HoverDiv = styled.div`
+const HoverDiv = styled(motion.Layer)`
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  padding-right: 1rem;
+  margin-right: 1rem;
   cursor: pointer;
   :hover {
     svg {
-      transform: rotate(15deg);
       g {
         fill: #1c488b;
       }
