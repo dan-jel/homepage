@@ -60,7 +60,7 @@ const HoverDiv = styled(motion.Layer)`
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  margin-right: 1rem;
+  margin-left: 1rem;
   cursor: pointer;
   :hover {
     svg {
@@ -81,7 +81,7 @@ const HoverDiv = styled(motion.Layer)`
 const Profiles = styled.div`
   position: absolute;
   top: 250px;
-  padding-top: 2rem;
+  padding: 2rem 2rem 0rem 0rem;
   right: 0;
   display: flex;
   height: 30px;

@@ -7,9 +7,9 @@ const AboutMe = () => {
 
 const Container = styled.div`
   position: relative;
-  height: 1400px;
+  height: 600px;
   width: 100%;
-  background: white;
+  background: rgb(219, 237, 255);
 `;
 
 export default AboutMe;

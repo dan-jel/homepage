@@ -31,7 +31,7 @@ const ProjectDrawer = styled.div`
 
 const Container = styled.div`
   position: relative;
-  top: 125px;
+  top: -300px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
