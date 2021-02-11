@@ -2,38 +2,35 @@ import React from "react";
 import styled from "styled-components";
 import AboutMe from "../components/AboutMe";
 import Curriculum from "../components/Curriculum";
+import { motion } from "framer-motion";
 
 const HomePage = ({ NavPosition, setNavPosition }) => {
   const changePosition = () => {
-    console.log(window.scrollY, NavPosition);
+    const pos = window.scrollY;
+
     if (window.location.pathname === "/") {
-      if (window.scrollY < 200) {
-        setNavPosition(0);
+      if (pos < 400) {
+        setNavPosition(-pos);
       } else {
         setNavPosition(-400);
       }
     } else {
-      return;
+      setNavPosition(-400);
     }
   };
 
   window.addEventListener("scroll", changePosition);
 
   return (
-    <Container
-      onScroll={() => {
-        console.log("TEST");
-      }}
-    >
+    <Container>
       <AboutMe />
       <Curriculum />
     </Container>
   );
 };
 
-const Container = styled.div`
+const Container = styled(motion.div)`
   position: relative;
-  top: 450px;
   left: 0;
   width: 100%;
   display: flex;

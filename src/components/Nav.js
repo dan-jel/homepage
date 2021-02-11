@@ -6,7 +6,11 @@ import { motion } from "framer-motion";
 
 const Nav = ({ NavPosition, setNavPosition }) => {
   return (
-    <Container animate={{ y: NavPosition }} transition={{ ease: "easeOut" }}>
+    <Container
+      initial={{ y: "-100%" }}
+      animate={{ y: NavPosition }}
+      transition={{ ease: "easeIn", duration: 0.5 }}
+    >
       <Header />
       <NavBar setNavPosition={setNavPosition} />
     </Container>
