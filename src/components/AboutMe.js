@@ -16,16 +16,22 @@ const AboutMe = () => {
           animate={{ width: "100%" }}
           transition={{ duration: 2, delay: 1.25 }}
         />
-        <h3>Krativer Kopf, Autodidakt und Coder</h3>
+        <h3>Kreativer Kopf, Autodidakt und Coder</h3>
         <p>
-          Ich bin 21 Jahre alt und lebe zur Zeit in Kassel. Im Sommer 2019 habe
-          ich angefangen Informatik zu studieren, was ich aber im Zuge der
-          Corona Pandemie pauseirt habe und mich seit dem selbstständig
-          fortbilde. Nach einer Art Findungsphase zu Beginn 2020, wo ich sehr
-          viel mit Python ausprobiert habe, bin ich zur Front End Entwicklung
-          gekommen. Seit dem bin ich dabei React mit all seinen Features und
-          Funktionen kennen zu lernen und in eigenregie Webseiten mit
-          verschiedenen Inhalten und Konzepten zu entwickeln.
+          Ich bin 21 Jahre alt und lebe zur Zeit in Kassel. Seit meiner Kindheit
+          beschäftige ich mich mit Computern & neusten Technologien wie
+          3D-Druckern, Drohen und Smart-Home-Devices, sodass für mich schon früh
+          klar war etwas in Richtung Informatik zu machen. Da ich im Studium
+          nicht das Gefühl hatte die Praxis und Erfahrung zu sammeln, die ich
+          mir erwünscht habe und aus früheren Berufserfahrungen mitgenommen
+          habe, dass mich die praktische Anwendung schnell(er) voranbringt,
+          entschied ich mich Anfang 2020 meine Bildung selbst in die Hand zu
+          nehmen. Seitdem habe ich meine Kenntnisse im Bereich der Front-End
+          Entwicklung extrem ausgebaut und mehrere Projekte selbstständig und in
+          kleineren Teams umgesetzt. Ich freue mich auf weitere
+          Berufserfahrungen, um meinen Wissenshorizont (wie zum Beispiel der
+          Umgang und Nutzen aus BigData und Automatisierungen) zu erweitern und
+          im Team an neuen Entwicklungen/Projekten/Technologien zu arbeiten.
         </p>
       </TextBlock>
     </Container>

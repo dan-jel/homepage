@@ -19,7 +19,7 @@ const Nav = ({ NavPosition, setNavPosition }) => {
 
 const Container = styled(motion.div)`
   overflow-x: hidden;
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 100;
   height: auto;
