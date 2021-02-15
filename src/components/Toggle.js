@@ -38,6 +38,9 @@ const Header = styled(motion.div)`
 `;
 
 const Line = styled(motion.div)`
+  position: relative;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 3px;
   background: #6c9ff6;

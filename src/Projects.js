@@ -26,14 +26,14 @@ const Projects = [
   },
   {
     id: 3,
-    name: "ignite",
+    name: "dummy 1",
     url: "http://h2911972.stratoserver.net:89/",
     github: "https://github.com/dan-jel/ignite-website",
     image: { ignite },
   },
   {
     id: 4,
-    name: "portfolio",
+    name: "dummy 2",
     url: "http://h2911972.stratoserver.net:88/",
     github: "https://github.com/dan-jel/react-portfolio",
     image: { portfolio },
