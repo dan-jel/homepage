@@ -98,7 +98,7 @@ const ProfileText = styled.div`
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 315px;
+  bottom: 0;
   left: 50%;
   width: 230px;
   transform: translateX(-50%);

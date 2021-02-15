@@ -18,20 +18,34 @@ const AboutMe = () => {
         />
         <h3>Kreativer Kopf, Autodidakt und Coder</h3>
         <p>
-          Ich bin 21 Jahre alt und lebe zur Zeit in Kassel. Seit meiner Kindheit
-          beschäftige ich mich mit Computern & neusten Technologien wie
-          3D-Druckern, Drohen und Smart-Home-Devices, sodass für mich schon früh
-          klar war etwas in Richtung Informatik zu machen. Da ich im Studium
-          nicht das Gefühl hatte die Praxis und Erfahrung zu sammeln, die ich
-          mir erwünscht habe und aus früheren Berufserfahrungen mitgenommen
-          habe, dass mich die praktische Anwendung schnell(er) voranbringt,
-          entschied ich mich Anfang 2020 meine Bildung selbst in die Hand zu
-          nehmen. Seitdem habe ich meine Kenntnisse im Bereich der Front-End
-          Entwicklung extrem ausgebaut und mehrere Projekte selbstständig und in
-          kleineren Teams umgesetzt. Ich freue mich auf weitere
-          Berufserfahrungen, um meinen Wissenshorizont (wie zum Beispiel der
-          Umgang und Nutzen aus BigData und Automatisierungen) zu erweitern und
-          im Team an neuen Entwicklungen/Projekten/Technologien zu arbeiten.
+          Neue Technologien haben mich schon von klein auf begeistert. Im Rahmen
+          von Ferienjobs in IT-Firmen konnte ich mich mit Drohnen, 3D-Druckern
+          und Smart-Home-Devices beschäftigen. Nach dem Abitur wollte ich
+          erstmal Praxiserfahrung sammeln und hatte das Glück an einem
+          beeindruckenden IT-Projekt (Glasfaser-Netzwerk Nordhessen)
+          mitzuwirken.
+          <br />
+          <br />
+          Nach dem Abschluss des Projektes wollte ich meine
+          Programmier-Kenntnisse vertiefen und startete ein Informatikstudium an
+          der UNI Kassel. Leider waren die Studieninhalte oft nicht mehr
+          zeitgemäß und der Studienbetrieb überwiegend analog, was im Frühjahr
+          2020 bedingt durch Covid-19 praktisch zum Stillstand des Lehrbetriebs
+          führte.
+          <br />
+          <br />
+          Deshalb entschied ich mich meine weitere Informatik-Ausbildung selbst
+          in die Hand zu nehmen.
+          <br />
+          Seitdem habe ich meine Kenntnisse im Bereich der Software-Entwicklung
+          umfassend ausgebaut und mehrere Projekte selbstständig und in
+          kleineren Teams umgesetzt. Das selbständige und praxisbezogene Lernen
+          ist für mich der effektivste Weg mir nachhaltig Wissen anzueignen.
+          <br />
+          <br />
+          Nun möchte ich gerne den nächsten Entwicklungsschritt durch die
+          Zusammenarbeit mit erfahrenen Software-Entwicklern in einem
+          professionellen Firmenumfeld machen.
         </p>
       </TextBlock>
     </Container>
@@ -50,6 +64,7 @@ const Container = styled(motion.div)`
   height: auto;
   width: 100%;
   background: rgb(219, 237, 255);
+  z-index: 5;
 `;
 
 const TextBlock = styled.div`

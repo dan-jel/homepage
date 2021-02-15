@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import AboutMe from "../components/AboutMe";
 import Curriculum from "../components/Curriculum";
+import Skills from "../components/Skills";
 import { motion } from "framer-motion";
 
 const HomePage = ({ NavPosition, setNavPosition }) => {
@@ -9,6 +10,7 @@ const HomePage = ({ NavPosition, setNavPosition }) => {
     <Container>
       <AboutMe />
       <Curriculum />
+      <Skills />
     </Container>
   );
 };
