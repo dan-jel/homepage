@@ -23,7 +23,7 @@ const Container = styled(motion.div)`
   top: 0;
   z-index: 100;
   height: auto;
-  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 4px rgba(28, 41, 90, 0.4);
 `;
 
 export default Nav;

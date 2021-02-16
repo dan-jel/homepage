@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Sebi from "../images/sebi.jpeg";
+import Moi from "../images/moi.jpeg";
 import Waves from "../images/waves.jpeg";
 import { motion } from "framer-motion";
 
@@ -19,7 +19,7 @@ const Header = () => {
         <img src={Waves} alt="Banner" />
       </Banner>
       <ProfilePic>
-        <img src={Sebi} alt="Profile" />
+        <img src={Moi} alt="Profile" />
       </ProfilePic>
       <ProfileText>
         <h1>Daniel Heese</h1>
@@ -125,6 +125,10 @@ const ProfilePic = styled.div`
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 4px 4px 7px #222222;
+  img {
+    height: 100%;
+    width: 100%;
+  }
 `;
 
 const Banner = styled.div`

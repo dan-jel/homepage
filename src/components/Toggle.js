@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Toggle = ({ children, title, date }) => {
   const [toggle, setToggle] = useState(false);
   return (
-    <Container layout>
+    <Container>
       <Header layout onClick={() => setToggle(!toggle)}>
         <h2 className="date">{date}</h2>
         <h2 className="title">{title}</h2>
@@ -17,11 +17,11 @@ const Toggle = ({ children, title, date }) => {
         />
       ) : (
         <Line
-          animate={{ width: 0 }}
+          animate={{ width: toggle ? "100%" : "0" }}
           transition={{ duration: 0.5, ease: "easeIn" }}
         />
       )}
-      {toggle ? children : ""}
+      <div layout>{toggle ? children : ""}</div>
     </Container>
   );
 };
@@ -30,6 +30,7 @@ const Container = styled(motion.div)`
   p {
     font-size: 1.2rem;
   }
+  position: relative;
 `;
 
 const Header = styled(motion.div)`

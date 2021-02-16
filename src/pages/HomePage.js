@@ -3,6 +3,8 @@ import styled from "styled-components";
 import AboutMe from "../components/AboutMe";
 import Curriculum from "../components/Curriculum";
 import Skills from "../components/Skills";
+import Certificates from "../components/Certificates";
+import ProjectPreview from "../components/ProjectPreview";
 import { motion } from "framer-motion";
 
 const HomePage = ({ NavPosition, setNavPosition }) => {
@@ -11,6 +13,8 @@ const HomePage = ({ NavPosition, setNavPosition }) => {
       <AboutMe />
       <Curriculum />
       <Skills />
+      <Certificates />
+      <ProjectPreview />
     </Container>
   );
 };
