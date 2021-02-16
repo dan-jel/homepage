@@ -4,11 +4,7 @@ import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
-    <Container
-      initial={{ x: "-100%" }}
-      animate={{ x: 0 }}
-      transition={{ duration: 0.75, delay: 0.5, ease: "easeOut" }}
-    >
+    <Container>
       <TextBlock>
         <h1>Hallo, ich bin Daniel!</h1>
         <Line

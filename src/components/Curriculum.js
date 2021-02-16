@@ -5,11 +5,7 @@ import Toggle from "./Toggle";
 
 const Curriculum = () => {
   return (
-    <Container
-      initial={{ x: "-100%" }}
-      animate={{ x: 0 }}
-      transition={{ duration: 0.75, delay: 0.75, ease: "easeOut" }}
-    >
+    <Container>
       <Block>
         <AnimateSharedLayout>
           <Toggle title="2005 - 2009  |  Montessori Schule Kassel">
