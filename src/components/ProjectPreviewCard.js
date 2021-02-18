@@ -27,7 +27,7 @@ const Container = styled.div`
   position: relative;
   height: 375px;
   width: 300px;
-  margin: 0 10px;
+  margin: 0 15px 0 5px;
   background: white;
   border-radius: 10px;
   box-shadow: 0px 2px 4px rgba(28, 41, 90, 0.4);
@@ -54,7 +54,6 @@ const Container = styled.div`
     left: 15px;
     top: 10px;
     width: 280px;
-    font-size: 0.9rem;
   }
   svg {
     cursor: pointer;

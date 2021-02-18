@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import AboutMe from "../components/AboutMe";
+import Header from "../components/Header";
 import Curriculum from "../components/Curriculum";
 import Skills from "../components/Skills";
 import Certificates from "../components/Certificates";
@@ -10,6 +11,7 @@ import { motion } from "framer-motion";
 const HomePage = ({ NavPosition, setNavPosition }) => {
   return (
     <Container>
+      <Header />
       <AboutMe />
       <Curriculum />
       <Skills />

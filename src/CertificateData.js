@@ -15,7 +15,7 @@ const CertificateData = [
     tag: "Python / DataScience",
     name: "Python Bootcamp: Vom Anfänger zum Profi, inkl. Data Science",
     info:
-      "umfassender Python Kurs inklusive Numpy, Pandas, Matplotlib, Webcrawling, Flask und PyQt Zertifikat als PDF beilegen",
+      "umfassender Python Kurs inklusive Numpy, Pandas, Matplotlib, Webcrawling, Flask und PyQt",
     link: "https://www.udemy.com/course/python-bootcamp/",
     pdf: pythonPDF,
     platform: "Udemy",

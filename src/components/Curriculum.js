@@ -105,7 +105,7 @@ const Container = styled(motion.div)`
   z-index: 10;
   background: white;
   padding: 3rem 0rem;
-  box-shadow: 0px -3px 4px rgba(28, 41, 90, 0.2);
+  box-shadow: 0px -4px 4px rgba(28, 41, 90, 0.2);
 `;
 
 const Block = styled.div`

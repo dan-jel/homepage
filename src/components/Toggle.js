@@ -28,7 +28,7 @@ const Toggle = ({ children, title, date }) => {
 
 const Container = styled(motion.div)`
   p {
-    font-size: 1.2rem;
+    font-size: 16px;
   }
   position: relative;
 `;
@@ -37,7 +37,7 @@ const Header = styled(motion.div)`
   display: flex;
   cursor: pointer;
   h2 {
-    font-size: 1.4rem;
+    font-size: 18px;
   }
 `;
 

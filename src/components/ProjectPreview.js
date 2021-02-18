@@ -8,8 +8,7 @@ const ProjectPreview = () => {
   return (
     <Container>
       <Padding>
-        <h1>Projects:</h1>
-        <Line />
+        <h1>Projects</h1>
         <Box>
           <Slider projectAmount={projectAmount}>
             {Projects.map((project) => {
@@ -29,18 +28,11 @@ const Padding = styled.div`
   left: 10%;
 `;
 
-const Line = styled.div`
-  height: 3px;
-  width: 200px;
-  background: #6c9ff6;
-`;
-
 const Box = styled.div`
   width: 100%;
   height: 405px;
   position: relative;
   overflow-x: scroll;
-  padding-top: 2rem;
   ::-webkit-scrollbar-track {
     border-radius: 10px;
     box-shadow: 0;
@@ -66,11 +58,7 @@ const Container = styled.div`
   background: white;
   display: flex;
   flex-direction: column;
-
   background: rgb(219, 237, 255);
-  h1 {
-    margin: 0rem 0rem 0.3rem 0rem;
-  }
 `;
 
 const Slider = styled.div`

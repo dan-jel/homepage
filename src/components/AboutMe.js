@@ -7,12 +7,8 @@ const AboutMe = () => {
     <Container>
       <TextBlock>
         <h1>Hallo, ich bin Daniel!</h1>
-        <Line
-          initial={{ width: 0 }}
-          animate={{ width: "100%" }}
-          transition={{ duration: 2, delay: 1.25 }}
-        />
-        <h3>Kreativer Kopf, Autodidakt und Coder</h3>
+        <Line />
+        <h2>Kreativer Kopf, Autodidakt und Coder</h2>
         <p>
           Neue Technologien haben mich schon von klein auf begeistert. Im Rahmen
           von Ferienjobs in IT-Firmen konnte ich mich mit Drohnen, 3D-Druckern
@@ -50,7 +46,7 @@ const AboutMe = () => {
 
 const Line = styled(motion.div)`
   height: 3px;
-  width: 200px;
+  width: 100%;
   background: #6c9ff6;
 `;
 
@@ -68,11 +64,8 @@ const TextBlock = styled.div`
   width: 80%;
   height: 100%;
   left: 10%;
-  h3 {
-    font-size: 1.5rem;
-  }
   p {
-    font-size: 1.2rem;
+    font-size: 18px;
   }
 `;
 

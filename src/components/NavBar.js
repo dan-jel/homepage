@@ -22,13 +22,6 @@ const NavBar = ({ setNavPosition }) => {
               </Link>
             </NavButton>
           </li>
-          <li>
-            <NavButton>
-              <Link to="/" onClick={() => setNavPosition(0)}>
-                contact
-              </Link>
-            </NavButton>
-          </li>
         </ul>
       </Navigation>
     </Bar>

@@ -28,7 +28,7 @@ const Padding = styled.div`
 
 const Box = styled.div`
   width: 100%;
-  height: 405px;
+  height: 425px;
   position: relative;
   overflow-x: scroll;
   padding-top: 5px;

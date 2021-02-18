@@ -18,7 +18,7 @@ const FinishedBar = ({ certi }) => {
     <Foot certi={certi}>
       <Finished />
       <CertiLink certi={certi} href={certi.pdf} target="_blank">
-        finished
+        certified
       </CertiLink>
     </Foot>
   );
@@ -87,7 +87,7 @@ const CertificatesCard = ({ certi }) => {
 };
 
 const Container = styled.div`
-  height: 375px;
+  height: 400px;
   width: 300px;
   background: white;
   border-radius: 10px;
@@ -97,10 +97,10 @@ const Container = styled.div`
 
 const Padding = styled.div`
   position: relative;
-  top: 5%;
-  left: 5%;
-  width: 90%;
-  height: 90%;
+  top: 7.5%;
+  left: 7.5%;
+  width: 85%;
+  height: 85%;
 `;
 
 const Tag = styled.div`
@@ -112,9 +112,10 @@ const Tag = styled.div`
   }
   h3 {
     p {
+      font-size: 14px;
       margin: 0;
       display: inline-block;
-      padding: 5px;
+      padding: 5px 15px;
       border-radius: 8px;
       width: auto;
       color: ${(props) => props.certi.color};

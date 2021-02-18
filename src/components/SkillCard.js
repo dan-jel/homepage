@@ -32,6 +32,10 @@ const Reihe = styled.div`
   p {
     margin: 0;
   }
+  svg {
+    position: relative;
+    top: 2px;
+  }
 `;
 
 const SkillCard = ({ Skill }) => {
@@ -54,7 +58,10 @@ const SkillCard = ({ Skill }) => {
   );
 };
 
-const ListBody = styled.div``;
+const ListBody = styled.div`
+  width: 100%;
+  align-items: center;
+`;
 
 const Container = styled.div`
   position: relative;
@@ -83,17 +90,18 @@ const Header = styled.div`
   justify-content: space-between;
   svg {
     z-index: 100;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     g {
       fill: black;
       stroke: black;
     }
   }
   h3 p {
+    font-size: 14px;
     margin: 0;
     display: inline-block;
-    padding: 5px;
+    padding: 5px 15px;
     border-radius: 8px;
     width: auto;
     color: #358de5;
@@ -102,11 +110,11 @@ const Header = styled.div`
 `;
 
 const Padding = styled.div`
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 80%;
   position: absolute;
-  top: 5%;
-  left: 5%;
+  top: 7.5%;
+  left: 7.5%;
 `;
 
 export default SkillCard;

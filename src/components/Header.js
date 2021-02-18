@@ -1,18 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import Moi from "../images/moi.jpeg";
 import Waves from "../images/waves.jpeg";
-import { motion } from "framer-motion";
+
+import BlueBack from "../images/blue.jpeg";
 
 import { ReactComponent as EmailIcon } from "../images/icons/email.svg";
 import { ReactComponent as LinkedIcon } from "../images/icons/linked.svg";
 import { ReactComponent as GithubIcon } from "../images/icons/github.svg";
 
 const Header = () => {
-  const [Rotation1, setRotation1] = useState(0);
-  const [Rotation2, setRotation2] = useState(0);
-  const [Rotation3, setRotation3] = useState(0);
-
   return (
     <Container>
       <Banner>
@@ -21,46 +18,35 @@ const Header = () => {
       <ProfilePic>
         <img src={Moi} alt="Profile" />
       </ProfilePic>
-      <ProfileText>
-        <h1>Daniel Heese</h1>
-        <Line />
-        <h2>Front End Developer</h2>
-      </ProfileText>
       <Profiles>
-        <HoverDiv
-          initial={{ x: 200 }}
-          animate={{ x: 0, rotate: Rotation1 }}
-          onHoverStart={() => setRotation1(Rotation1 + 360)}
-          transition={{ ease: "easeOut" }}
-        >
-          <EmailIcon />
-        </HoverDiv>
-        <HoverDiv
-          initial={{ x: 200 }}
-          animate={{ x: 0, rotate: Rotation2 }}
-          onHoverStart={() => setRotation2(Rotation2 + 360)}
-          transition={{ ease: "linear" }}
-        >
-          <LinkedIcon />
-        </HoverDiv>
-        <HoverDiv
-          initial={{ x: 200 }}
-          animate={{ x: 0, rotate: Rotation3 }}
-          onHoverStart={() => setRotation3(Rotation3 + 360)}
-          transition={{ ease: "linear" }}
-        >
-          <GithubIcon />
-        </HoverDiv>
+        <Holder>
+          <HoverDiv>
+            <EmailIcon />
+          </HoverDiv>
+          <HoverDiv>
+            <LinkedIcon />
+          </HoverDiv>
+          <HoverDiv>
+            <GithubIcon />
+          </HoverDiv>
+        </Holder>
       </Profiles>
     </Container>
   );
 };
 
-const HoverDiv = styled(motion.Layer)`
+const Holder = styled.div`
+  position: absolute;
+  right: 10%;
+  bottom: 7.5%;
+  display: flex;
+`;
+
+const HoverDiv = styled.div`
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  margin-left: 1rem;
+  margin: 0rem 0.5rem;
   cursor: pointer;
   :hover {
     svg {
@@ -79,39 +65,27 @@ const HoverDiv = styled(motion.Layer)`
 `;
 
 const Profiles = styled.div`
-  position: absolute;
-  top: 250px;
-  padding: 2rem 2rem 0rem 0rem;
+  position: relative;
+  bottom: 0;
   right: 0;
   display: flex;
-  height: 30px;
-`;
-
-const Line = styled.div`
-  position: relative;
-  height: 3px;
-  width: 120%;
-  background: #6d9ff6;
-`;
-
-const ProfileText = styled.div`
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 230px;
-  transform: translateX(-50%);
+  height: 120px;
   align-items: center;
-  h1 {
-    margin: 0;
-    margin-bottom: 0.3rem;
-    white-space: nowrap;
-  }
-  h2 {
-    margin: 0;
-    margin-top: 0.3rem;
-    white-space: nowrap;
+  margin-bottom: 10px;
+  a {
+    padding-left: 10%;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    p {
+      padding: 5px 10px;
+      border-radius: 1.5rem;
+      :hover {
+        color: white;
+        background-image: url(${BlueBack});
+      }
+    }
   }
 `;
 
@@ -119,7 +93,7 @@ const ProfilePic = styled.div`
   position: absolute;
   height: 250px;
   width: 250px;
-  top: 50px;
+  top: 53px;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
@@ -132,7 +106,8 @@ const ProfilePic = styled.div`
 `;
 
 const Banner = styled.div`
-  height: 250px;
+  position: relative;
+  height: 200px;
   width: 100vw;
   overflow: hidden;
   object-fit: fill;
@@ -150,7 +125,10 @@ const Container = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 400px;
+  height: auto;
+  box-shadow: 0px 2px 4px rgba(28, 41, 90, 0.4);
+  z-index: 10;
+  overflow: hidden;
 `;
 
 export default Header;
