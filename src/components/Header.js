@@ -20,13 +20,25 @@ const Header = () => {
       </ProfilePic>
       <Profiles>
         <Holder>
-          <HoverDiv>
+          <HoverDiv
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto:daniel.heese1@gmail.com"
+          >
             <EmailIcon />
           </HoverDiv>
-          <HoverDiv>
+          <HoverDiv
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/daniel-heese/"
+          >
             <LinkedIcon />
           </HoverDiv>
-          <HoverDiv>
+          <HoverDiv
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/dan-jel"
+          >
             <GithubIcon />
           </HoverDiv>
         </Holder>
@@ -42,7 +54,7 @@ const Holder = styled.div`
   display: flex;
 `;
 
-const HoverDiv = styled.div`
+const HoverDiv = styled.a`
   height: 40px;
   width: 40px;
   border-radius: 50%;

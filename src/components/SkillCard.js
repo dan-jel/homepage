@@ -49,8 +49,8 @@ const SkillCard = ({ Skill }) => {
           <Skill.Icon />
         </Header>
         <ListBody>
-          {Skill.items.map((item) => {
-            return <Entry item={item} />;
+          {Skill.items.map((item, i) => {
+            return <Entry item={item} key={i} />;
           })}
         </ListBody>
       </Padding>

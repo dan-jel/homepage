@@ -12,8 +12,8 @@ const Skills = () => {
         <h1>Skills</h1>
         <Box>
           <Slider skillAmount={skillAmount}>
-            {SkillsData.map((Skill) => {
-              return <SkillCard key={Skill.id} Skill={Skill} />;
+            {SkillsData.map((Skill, i) => {
+              return <SkillCard Skill={Skill} key={i} />;
             })}
           </Slider>
         </Box>

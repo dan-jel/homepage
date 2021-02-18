@@ -5,6 +5,7 @@ import { ReactComponent as Softskills } from "./images/icons/softskills.svg";
 
 const SkillsData = [
   {
+    id: "0",
     tag: "Coding",
     Icon: Coding,
     items: [
@@ -31,6 +32,7 @@ const SkillsData = [
     ],
   },
   {
+    id: "1",
     tag: "Infrastructure",
     Icon: Infrastructure,
     items: [
@@ -61,6 +63,7 @@ const SkillsData = [
     ],
   },
   {
+    id: "2",
     tag: "Tools",
     Icon: Tools,
     items: [
@@ -87,6 +90,7 @@ const SkillsData = [
     ],
   },
   {
+    id: "3",
     tag: "Softskills",
     Icon: Softskills,
     items: [
