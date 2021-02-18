@@ -1,13 +1,14 @@
 import React from "react";
 import { ReactComponent as GithubIcon } from "../images/icons/github.svg";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const Card = ({ project }) => {
   return (
     <Container>
       <Padding>
         <ImageBox>
-          <img
+          <motion.img
             src={`${project.image}`}
             alt="project thumbnail"
             onClick={() => {
