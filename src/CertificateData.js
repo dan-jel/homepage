@@ -3,6 +3,10 @@ import DataScience from "./images/datascience.jpeg";
 import FrontEnd from "./images/frontend.jpeg";
 import BackEnd from "./images/backend.jpeg";
 
+// PDF Import
+import pythonPDF from "./images/pdf/python.pdf";
+import reactPDF from "./images/pdf/react.pdf";
+
 const CertificateData = [
   {
     id: 0,
@@ -13,7 +17,7 @@ const CertificateData = [
     info:
       "umfassender Python Kurs inklusive Numpy, Pandas, Matplotlib, Webcrawling, Flask und PyQt Zertifikat als PDF beilegen",
     link: "https://www.udemy.com/course/python-bootcamp/",
-    pdf: "",
+    pdf: pythonPDF,
     platform: "Udemy",
     inProgress: false,
   },
@@ -26,7 +30,7 @@ const CertificateData = [
     info:
       "Javascript Refresher, React Grundlagen, 3 verschiedene Projekte mit jeweils anderem Schwerpunkt (alle unter Projekte zu finden), styled-components, framer-motion, Redux und Async",
     link: "https://developedbyed.com/courses/enrolled/1203573",
-    pdf: "",
+    pdf: reactPDF,
     platform: "developedbyed",
     inProgress: false,
   },

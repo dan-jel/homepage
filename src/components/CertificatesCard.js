@@ -17,10 +17,19 @@ const FinishedBar = ({ certi }) => {
   return (
     <Foot certi={certi}>
       <Finished />
-      <p>finished</p>
+      <CertiLink certi={certi} href={certi.pdf} target="_blank">
+        finished
+      </CertiLink>
     </Foot>
   );
 };
+
+const CertiLink = styled.a`
+  cursor: pointer;
+  :hover {
+    background: ${(props) => props.certi.color + `20`};
+  }
+`;
 
 const Foot = styled.div`
   position: absolute;
@@ -37,7 +46,10 @@ const Foot = styled.div`
       stroke: ${(props) => props.certi.color};
     }
   }
+  a,
   p {
+    text-decoration: none;
+    color: black;
     border: 1px solid ${(props) => props.certi.color};
     padding: 5px 10px;
     margin: 0;
@@ -54,7 +66,13 @@ const CertificatesCard = ({ certi }) => {
           <h3>
             <p>{certi.tag}</p>
           </h3>
-          <h4>{certi.name}</h4>
+          <h4
+            onClick={() => {
+              window.location.href = certi.link;
+            }}
+          >
+            {certi.name}
+          </h4>
           <p>{certi.info}</p>
         </Tag>
         {certi.inProgress ? (
@@ -103,7 +121,11 @@ const Tag = styled.div`
     }
   }
   h4 {
+    cursor: pointer;
     margin: 0;
+    :hover {
+      text-decoration: underline;
+    }
   }
 `;
 
