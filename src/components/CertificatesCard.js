@@ -90,6 +90,10 @@ const CourseLink = styled.a`
   font-size: 16px;
   color: black;
   font-weight: bold;
+  text-decoration: none;
+  :hover {
+    text-decoration: underline;
+  }
 `;
 
 const Container = styled.div`
@@ -126,13 +130,6 @@ const Tag = styled.div`
       width: auto;
       color: ${(props) => props.certi.color};
       background: ${(props) => props.certi.color + `20`};
-    }
-  }
-  h4 {
-    cursor: pointer;
-    margin: 0;
-    :hover {
-      text-decoration: underline;
     }
   }
 `;

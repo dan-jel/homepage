@@ -70,7 +70,7 @@ const Container = styled.div`
   margin: 0 15px 20px 5px;
   background: white;
   border-radius: 10px;
-  box-shadow: 0px 2px 4px rgba(28, 41, 90, 0.4);
+  box-shadow: 0px 1px 3px rgba(28, 41, 90, 0.4);
   svg {
     color: black;
     height: 30px;

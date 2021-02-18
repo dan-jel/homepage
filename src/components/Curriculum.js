@@ -49,6 +49,7 @@ const Details = styled.div`
 `;
 
 const Header = styled.div`
+  cursor: pointer;
   width: 100%;
   height: 50px;
   display: flex;
@@ -60,13 +61,13 @@ const Header = styled.div`
   }
 `;
 
-const Box = styled.div`
+const Box = styled(motion.div)`
   position: relative;
   width: 100%;
   height: auto;
   margin-bottom: 10px;
   border-radius: 8px;
-  box-shadow: 0px 2px 4px rgba(28, 41, 90, 0.2);
+  box-shadow: 0px 1px 3px rgba(28, 41, 90, 0.4);
 `;
 
 const Curriculum = () => {
