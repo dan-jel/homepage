@@ -60,7 +60,7 @@ const Padding = styled.div`
 
 const Box = styled.div`
   width: 100%;
-  height: 405px;
+  height: 430px;
   position: relative;
   overflow-x: scroll;
   ::-webkit-scrollbar-track {

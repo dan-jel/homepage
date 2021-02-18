@@ -5,27 +5,46 @@ import styled from "styled-components";
 const Card = ({ project }) => {
   return (
     <Container>
-      <img
-        src={`${project.image}`}
-        alt="project thumbnail"
-        onClick={() => {
-          window.location.href = project.url;
-        }}
-      />
-      <h4>{project.name}</h4>
-      <p>{project.info}</p>
-      <GithubIcon
-        onClick={() => {
-          window.location.href = project.github;
-        }}
-      />
+      <Padding>
+        <ImageBox>
+          <img
+            src={`${project.image}`}
+            alt="project thumbnail"
+            onClick={() => {
+              window.location.href = project.url;
+            }}
+          />
+        </ImageBox>
+        <h4>{project.name}</h4>
+        <p>{project.info}</p>
+        <GithubIcon
+          onClick={() => {
+            window.location.href = project.github;
+          }}
+        />
+      </Padding>
     </Container>
   );
 };
 
+const ImageBox = styled.div`
+  position: relative;
+  width: 100%;
+  height: 125px;
+  display: inline-block;
+`;
+
+const Padding = styled.div`
+  position: relative;
+  width: 85%;
+  height: 85%;
+  top: 7.5%;
+  left: 7.5%;
+`;
+
 const Container = styled.div`
   position: relative;
-  height: 375px;
+  height: 400px;
   width: 300px;
   margin: 0 15px 0 5px;
   background: white;
@@ -36,24 +55,19 @@ const Container = styled.div`
   img {
     cursor: pointer;
     position: relative;
-    left: 15px;
-    top: 15px;
     border-radius: 10px;
-    height: 200px;
-    width: 270px;
+    width: 100%;
   }
   h4 {
     position: relative;
-    left: 15px;
-    top: 25px;
     margin: 0;
+    margin-top: 20px;
     padding: 5px 0 10px 0;
   }
   p {
     position: relative;
-    left: 15px;
-    top: 10px;
-    width: 280px;
+    width: 100%;
+    margin: 0;
   }
   svg {
     cursor: pointer;
@@ -65,8 +79,8 @@ const Container = styled.div`
     height: 30px;
     width: 30px;
     position: absolute;
-    bottom: 5%;
-    right: 5%;
+    bottom: 0;
+    right: 0;
   }
 `;
 
