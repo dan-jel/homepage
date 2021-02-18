@@ -1,13 +1,24 @@
 import React from "react";
-// import { motion } from "framer-motion";
+import { ReactComponent as GithubIcon } from "../images/icons/github.svg";
 import styled from "styled-components";
 
 const Card = ({ project }) => {
   return (
     <Container>
-      <img src={`${project.image}`} alt="project thumbnail" />
+      <img
+        src={`${project.image}`}
+        alt="project thumbnail"
+        onClick={() => {
+          window.location.href = project.url;
+        }}
+      />
       <h4>{project.name}</h4>
       <p>{project.info}</p>
+      <GithubIcon
+        onClick={() => {
+          window.location.href = project.github;
+        }}
+      />
     </Container>
   );
 };
@@ -23,6 +34,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   img {
+    cursor: pointer;
     position: relative;
     left: 15px;
     top: 15px;
@@ -35,6 +47,7 @@ const Container = styled.div`
     left: 15px;
     top: 25px;
     margin: 0;
+    padding: 5px 0 10px 0;
   }
   p {
     position: relative;
@@ -42,6 +55,19 @@ const Container = styled.div`
     top: 10px;
     width: 280px;
     font-size: 0.9rem;
+  }
+  svg {
+    cursor: pointer;
+    :hover {
+      g {
+        fill: #6c9ff6;
+      }
+    }
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
   }
 `;
 

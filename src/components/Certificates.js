@@ -6,24 +6,32 @@ import CertificateData from "../CertificateData";
 const Certificates = () => {
   return (
     <Container>
-      <Box>
-        <Slider>
-          {CertificateData.map((certi) => {
-            return <CertificatesCard key={certi.id} certi={certi} />;
-          })}
-        </Slider>
-      </Box>
+      <Padding>
+        <h1>Zertifikate & Kurse</h1>
+        <Box>
+          <Slider>
+            {CertificateData.map((certi) => {
+              return <CertificatesCard key={certi.id} certi={certi} />;
+            })}
+          </Slider>
+        </Box>
+      </Padding>
     </Container>
   );
 };
 
-const Box = styled.div`
+const Padding = styled.div`
   width: 80%;
+  position: relative;
   left: 10%;
+`;
+
+const Box = styled.div`
+  width: 100%;
   height: 405px;
   position: relative;
   overflow-x: scroll;
-  padding-top: 2rem;
+  padding-top: 5px;
   display: flex;
   ::-webkit-scrollbar-track {
     border-radius: 10px;
@@ -46,6 +54,9 @@ const Container = styled.div`
   width: 100%;
   height: auto;
   background: white;
+  padding: 3rem 0rem;
+  box-shadow: 0px 4px 4px rgba(28, 41, 90, 0.2);
+  z-index: 10;
 `;
 
 const Slider = styled.div`

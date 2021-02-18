@@ -36,6 +36,9 @@ const Container = styled(motion.div)`
 const Header = styled(motion.div)`
   display: flex;
   cursor: pointer;
+  h2 {
+    font-size: 1.4rem;
+  }
 `;
 
 const Line = styled(motion.div)`

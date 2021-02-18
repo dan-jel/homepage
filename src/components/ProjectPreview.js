@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import styled from "styled-components";
 import Projects from "../Projects";
 import Card from "./ProjectPreviewCard";
@@ -7,32 +6,37 @@ import Card from "./ProjectPreviewCard";
 const ProjectPreview = () => {
   const projectAmount = Projects.length;
   return (
-    <Container
-      initial={{ x: "-100%" }}
-      animate={{ x: 0 }}
-      transition={{ duration: 0.75, delay: 0.5, ease: "easeOut" }}
-    >
-      <h1>Projects:</h1>
-      <Line />
-      <Box>
-        <Slider projectAmount={projectAmount}>
-          {Projects.map((project) => {
-            return <Card key={project.id} project={project} />;
-          })}
-        </Slider>
-      </Box>
+    <Container>
+      <Padding>
+        <h1>Projects:</h1>
+        <Line />
+        <Box>
+          <Slider projectAmount={projectAmount}>
+            {Projects.map((project) => {
+              return <Card key={project.id} project={project} />;
+            })}
+          </Slider>
+        </Box>
+      </Padding>
     </Container>
   );
 };
 
-const Line = styled(motion.div)`
+const Padding = styled.div`
+  width: 80%;
+  height: auto;
+  position: relative;
+  left: 10%;
+`;
+
+const Line = styled.div`
   height: 3px;
   width: 200px;
   background: #6c9ff6;
 `;
 
 const Box = styled.div`
-  width: 80%;
+  width: 100%;
   height: 405px;
   position: relative;
   overflow-x: scroll;
@@ -40,7 +44,7 @@ const Box = styled.div`
   ::-webkit-scrollbar-track {
     border-radius: 10px;
     box-shadow: 0;
-    background-color: white;
+    background-color: #dbedff;
   }
 
   ::-webkit-scrollbar {
@@ -54,7 +58,7 @@ const Box = styled.div`
   }
 `;
 
-const Container = styled(motion.div)`
+const Container = styled.div`
   position: relative;
   padding: 3rem 0rem;
   height: auto;
@@ -62,10 +66,10 @@ const Container = styled(motion.div)`
   background: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   background: rgb(219, 237, 255);
   h1 {
-    margin: 1rem 0rem 0.3rem 0rem;
+    margin: 0rem 0rem 0.3rem 0rem;
   }
 `;
 

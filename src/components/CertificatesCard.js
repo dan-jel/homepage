@@ -43,6 +43,7 @@ const Foot = styled.div`
     height: 30px;
     width: 30px;
     g {
+      color: ${(props) => props.certi.color};
       stroke: ${(props) => props.certi.color};
     }
   }
@@ -90,7 +91,7 @@ const Container = styled.div`
   width: 300px;
   background: white;
   border-radius: 10px;
-  margin: 0px 10px;
+  margin: 0 15px 0px 5px;
   box-shadow: 0px 1px 3px rgba(28, 41, 90, 0.4);
 `;
 

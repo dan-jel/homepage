@@ -56,7 +56,7 @@ const Line = styled(motion.div)`
 
 const Container = styled(motion.div)`
   position: relative;
-  padding: 3rem 0rem 3rem 0rem;
+  padding: 3rem 0rem;
   height: auto;
   width: 100%;
   background: rgb(219, 237, 255);
@@ -65,9 +65,9 @@ const Container = styled(motion.div)`
 
 const TextBlock = styled.div`
   position: relative;
-  width: 60%;
+  width: 80%;
   height: 100%;
-  left: 20%;
+  left: 10%;
   h3 {
     font-size: 1.5rem;
   }
