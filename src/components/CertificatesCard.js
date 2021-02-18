@@ -67,13 +67,13 @@ const CertificatesCard = ({ certi }) => {
           <h3>
             <p>{certi.tag}</p>
           </h3>
-          <h4
-            onClick={() => {
-              window.location.href = certi.link;
-            }}
+          <CourseLink
+            target="_blank"
+            rel="noopener noreferrer"
+            href={certi.link}
           >
             {certi.name}
-          </h4>
+          </CourseLink>
           <p>{certi.info}</p>
         </Tag>
         {certi.inProgress ? (
@@ -85,6 +85,12 @@ const CertificatesCard = ({ certi }) => {
     </Container>
   );
 };
+
+const CourseLink = styled.a`
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+`;
 
 const Container = styled.div`
   height: 400px;

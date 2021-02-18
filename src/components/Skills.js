@@ -27,6 +27,9 @@ const Padding = styled.div`
   height: auto;
   width: 80%;
   left: 10%;
+  h1 {
+    padding-left: 5px;
+  }
 `;
 
 const Container = styled.div`

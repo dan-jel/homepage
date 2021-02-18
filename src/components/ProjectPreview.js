@@ -2,13 +2,17 @@ import React from "react";
 import styled from "styled-components";
 import Projects from "../Projects";
 import Card from "./ProjectPreviewCard";
+import { Link } from "react-router-dom";
 
 const ProjectPreview = () => {
   const projectAmount = Projects.length;
   return (
     <Container>
       <Padding>
-        <h1>Projects</h1>
+        <Header>
+          <h1>Projects</h1>
+          <ProjektLink to="/projects">Projektübersicht</ProjektLink>
+        </Header>
         <Box>
           <Slider projectAmount={projectAmount}>
             {Projects.map((project) => {
@@ -20,6 +24,32 @@ const ProjectPreview = () => {
     </Container>
   );
 };
+
+const Header = styled.div`
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    padding-left: 5px;
+  }
+`;
+
+const ProjektLink = styled(Link)`
+  position: relative;
+  right: 0;
+  top: 0;
+  color: black;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 8px;
+  text-decoration: underline;
+  :hover {
+    background: white;
+    box-shadow: 0px 2px 4px rgba(28, 41, 90, 0.4);
+  }
+`;
 
 const Padding = styled.div`
   width: 80%;

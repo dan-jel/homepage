@@ -57,6 +57,9 @@ const Container = styled.div`
   padding: 3rem 0rem;
   box-shadow: 0px 4px 4px rgba(28, 41, 90, 0.2);
   z-index: 10;
+  h1 {
+    padding-left: 5px;
+  }
 `;
 
 const Slider = styled.div`
