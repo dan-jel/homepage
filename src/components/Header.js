@@ -3,8 +3,6 @@ import styled from "styled-components";
 import Moi from "../images/moi.jpeg";
 import Waves from "../images/waves.jpeg";
 
-import BlueBack from "../images/blue.jpeg";
-
 import { ReactComponent as EmailIcon } from "../images/icons/email.svg";
 import { ReactComponent as LinkedIcon } from "../images/icons/linked.svg";
 import { ReactComponent as GithubIcon } from "../images/icons/github.svg";
@@ -49,8 +47,9 @@ const Header = () => {
 
 const Holder = styled.div`
   position: absolute;
-  right: 10%;
-  bottom: 7.5%;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
   display: flex;
 `;
 
@@ -58,7 +57,7 @@ const HoverDiv = styled.a`
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  margin: 0rem 0.5rem;
+  margin: 0 10px;
   cursor: pointer;
   :hover {
     svg {
@@ -81,24 +80,9 @@ const Profiles = styled.div`
   bottom: 0;
   right: 0;
   display: flex;
-  height: 120px;
+  height: 160px;
   align-items: center;
   margin-bottom: 10px;
-  a {
-    padding-left: 10%;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    p {
-      padding: 5px 10px;
-      border-radius: 1.5rem;
-      :hover {
-        color: white;
-        background-image: url(${BlueBack});
-      }
-    }
-  }
 `;
 
 const ProfilePic = styled.div`
@@ -110,7 +94,7 @@ const ProfilePic = styled.div`
   transform: translateX(-50%);
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 4px 4px 7px #222222;
+  box-shadow: 2px 2px 6px rgba(28, 41, 90, 0.5);
   img {
     height: 100%;
     width: 100%;
@@ -138,7 +122,6 @@ const Container = styled.div`
   left: 0;
   width: 100%;
   height: auto;
-  box-shadow: 0px 2px 4px rgba(28, 41, 90, 0.4);
   z-index: 10;
   overflow: hidden;
 `;

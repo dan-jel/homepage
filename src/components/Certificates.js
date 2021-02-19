@@ -24,6 +24,9 @@ const Padding = styled.div`
   width: 80%;
   position: relative;
   left: 10%;
+  h1 {
+    text-align: center;
+  }
 `;
 
 const Box = styled.div`
@@ -33,6 +36,8 @@ const Box = styled.div`
   overflow-x: scroll;
   padding-top: 5px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   ::-webkit-scrollbar-track {
     border-radius: 10px;
     box-shadow: 0;

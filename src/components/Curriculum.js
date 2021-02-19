@@ -23,13 +23,19 @@ const Chapter = ({ entry, selected, setSelected }) => {
         }}
       >
         <motion.img animate={{ rotate: moi ? 90 : 0 }} src={Arrow} alt="" />
-        <Date>{entry.date}</Date>
-        <h3>{entry.title}</h3>
+        <HeaderText>
+          <Date>{entry.date}</Date>
+          <h3>{entry.title}</h3>
+        </HeaderText>
       </Header>
       {moi ? <ShowText /> : ""}
     </Box>
   );
 };
+
+const HeaderText = styled.div`
+  display: flex;
+`;
 
 const Date = styled.h3`
   width: 120px;
@@ -95,10 +101,13 @@ const Curriculum = () => {
 };
 
 const Padding = styled.div`
-  width: 80%;
+  width: 70%;
   height: auto;
   position: relative;
-  left: 10%;
+  left: 15%;
+  h1 {
+    text-align: center;
+  }
 `;
 
 const Container = styled(motion.div)`
@@ -108,7 +117,6 @@ const Container = styled(motion.div)`
   z-index: 10;
   background: white;
   padding: 3rem 0rem;
-  box-shadow: 0px -4px 4px rgba(28, 41, 90, 0.2);
 `;
 
 const Block = styled.div`

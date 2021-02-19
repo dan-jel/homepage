@@ -25,10 +25,11 @@ const Skills = () => {
 const Padding = styled.div`
   position: relative;
   height: auto;
-  width: 80%;
-  left: 10%;
+  width: 70%;
+  left: 15%;
   h1 {
     padding-left: 5px;
+    text-align: center;
   }
 `;
 
@@ -40,6 +41,9 @@ const Container = styled.div`
 `;
 
 const Box = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: auto;
   position: relative;
@@ -64,7 +68,7 @@ const Box = styled.div`
 
 const Slider = styled.div`
   display: flex;
-  width: ${(props) => props.skillAmount * 320 + "px"};
+  width: ${(props) => props.skillAmount * 320 - 10 + "px"};
   height: auto;
 `;
 

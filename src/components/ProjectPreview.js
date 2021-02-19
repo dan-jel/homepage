@@ -9,10 +9,7 @@ const ProjectPreview = () => {
   return (
     <Container>
       <Padding>
-        <Header>
-          <h1>Projects</h1>
-          <ProjektLink to="/projects">Projektübersicht</ProjektLink>
-        </Header>
+        <h1>Projects</h1>
         <Box>
           <Slider projectAmount={projectAmount}>
             {Projects.map((project) => {
@@ -20,42 +17,34 @@ const ProjectPreview = () => {
             })}
           </Slider>
         </Box>
+        <ProjektLink to="/projects">Projektübersicht</ProjektLink>
       </Padding>
     </Container>
   );
 };
 
-const Header = styled.div`
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  h1 {
-    padding-left: 5px;
-  }
-`;
-
 const ProjektLink = styled(Link)`
-  position: relative;
-  right: 0;
-  top: 0;
   color: black;
   cursor: pointer;
-  padding: 5px 15px;
   border-radius: 8px;
-  text-decoration: underline;
+  margin-top: 1rem;
+  padding: 5px 10px;
+  text-decoration: none;
   :hover {
+    text-decoration: underline;
     background: white;
     box-shadow: 0px 2px 4px rgba(28, 41, 90, 0.4);
   }
 `;
 
 const Padding = styled.div`
-  width: 80%;
+  width: 70%;
   height: auto;
   position: relative;
-  left: 10%;
+  left: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Box = styled.div`
@@ -63,6 +52,9 @@ const Box = styled.div`
   height: 430px;
   position: relative;
   overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   ::-webkit-scrollbar-track {
     border-radius: 10px;
     box-shadow: 0;

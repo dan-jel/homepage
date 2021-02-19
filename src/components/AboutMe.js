@@ -6,9 +6,12 @@ const AboutMe = () => {
   return (
     <Container>
       <TextBlock>
-        <h1>Hallo, ich bin Daniel!</h1>
+        <HeaderText>
+          <h2>Hallo, ich bin Daniel -&nbsp;</h2>
+          <h2>Kreativer Kopf, Autodidakt und Coder</h2>
+        </HeaderText>
+
         <Line />
-        <h2>Kreativer Kopf, Autodidakt und Coder</h2>
         <p>
           Neue Technologien haben mich schon von klein auf begeistert. Im Rahmen
           von Ferienjobs in IT-Firmen konnte ich mich mit Drohnen, 3D-Druckern
@@ -44,6 +47,10 @@ const AboutMe = () => {
   );
 };
 
+const HeaderText = styled.div`
+  display: flex;
+`;
+
 const Line = styled(motion.div)`
   height: 3px;
   width: 100%;
@@ -52,18 +59,21 @@ const Line = styled(motion.div)`
 
 const Container = styled(motion.div)`
   position: relative;
-  padding: 3rem 0rem;
+  padding: 1rem 0rem 3rem 0rem;
   height: auto;
   width: 100%;
-  background: rgb(219, 237, 255);
   z-index: 5;
 `;
 
 const TextBlock = styled.div`
+  text-align: center;
   position: relative;
-  width: 80%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
-  left: 10%;
+  left: 15%;
   p {
     font-size: 18px;
   }
