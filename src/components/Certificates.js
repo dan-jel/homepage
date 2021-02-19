@@ -21,9 +21,9 @@ const Certificates = () => {
 };
 
 const Padding = styled.div`
-  width: 80%;
+  width: 70%;
   position: relative;
-  left: 10%;
+  left: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,7 +56,7 @@ const Box = styled.div`
     box-shadow: 0rem;
     background-color: #6c9ff6;
   }
-  @media only screen and (max-width: 1215px) {
+  @media only screen and (max-width: 1390px) {
     align-items: flex-start;
   }
 `;

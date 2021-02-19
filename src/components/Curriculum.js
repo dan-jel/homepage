@@ -35,6 +35,16 @@ const Chapter = ({ entry, selected, setSelected }) => {
 
 const HeaderText = styled.div`
   display: flex;
+  @media only screen and (max-width: 680px) {
+    flex-direction: column;
+    h3 {
+      font-size: 1rem;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      left: 10px;
+    }
+  }
 `;
 
 const Date = styled.h3`
@@ -42,6 +52,7 @@ const Date = styled.h3`
   height: auto;
   position: relative;
   left: 5px;
+  padding: 0 10px 0 5px;
 `;
 
 const Details = styled.div`
@@ -49,7 +60,7 @@ const Details = styled.div`
   height: auto;
   width: 100%;
   p {
-    margin: 0 35px;
+    margin: 0 35px 0 45px;
     padding-bottom: 20px;
   }
 `;
@@ -61,7 +72,7 @@ const Header = styled.div`
   display: flex;
   align-items: center;
   img {
-    margin-left: 5px;
+    margin-left: 10px;
     height: 25px;
     width: 25px;
   }

@@ -89,7 +89,7 @@ const ProfilePic = styled.div`
   position: absolute;
   height: 250px;
   width: 250px;
-  top: 53px;
+  top: 57px;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
@@ -106,8 +106,10 @@ const Banner = styled.div`
   height: 200px;
   width: 100vw;
   overflow: hidden;
-  object-fit: fill;
+  background-repeat: repeat-x;
   img {
+    position: relative;
+    left: -5px;
     width: auto;
     height: 100%;
   }

@@ -49,6 +49,15 @@ const AboutMe = () => {
 
 const HeaderText = styled.div`
   display: flex;
+  h2 {
+    font-size: 1.3rem;
+  }
+  @media only screen and (max-width: 825px) {
+    flex-direction: column;
+    h2 {
+      margin: 5px 0;
+    }
+  }
 `;
 
 const Line = styled(motion.div)`
