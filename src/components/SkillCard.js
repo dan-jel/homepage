@@ -67,7 +67,7 @@ const Container = styled.div`
   position: relative;
   height: 375px;
   width: 300px;
-  margin: 0 15px 20px 5px;
+  margin: 0 15px 0px 5px;
   background: white;
   border-radius: 10px;
   box-shadow: 0px 1px 3px rgba(28, 41, 90, 0.4);

@@ -1,7 +1,6 @@
 import { ReactComponent as Coding } from "./images/icons/coding.svg";
 import { ReactComponent as Infrastructure } from "./images/icons/infrastructure.svg";
 import { ReactComponent as Tools } from "./images/icons/tools.svg";
-import { ReactComponent as Softskills } from "./images/icons/softskills.svg";
 
 const SkillsData = [
   {
@@ -69,33 +68,6 @@ const SkillsData = [
     items: [
       {
         name: "GitHub",
-        stars: 4,
-      },
-      {
-        name: "Microsoft Teams",
-        stars: 5,
-      },
-      {
-        name: "Postman",
-        stars: 3,
-      },
-      {
-        name: "Adobe Illustrator",
-        stars: 4,
-      },
-      {
-        name: "Procreate",
-        stars: 5,
-      },
-    ],
-  },
-  {
-    id: "3",
-    tag: "Softskills",
-    Icon: Softskills,
-    items: [
-      {
-        name: "kreativ",
         stars: 4,
       },
       {
