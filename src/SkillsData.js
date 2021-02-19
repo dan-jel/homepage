@@ -10,7 +10,7 @@ const SkillsData = [
     items: [
       {
         name: "React.js",
-        stars: 3,
+        stars: 4,
       },
       {
         name: "JavaScript",
@@ -26,7 +26,7 @@ const SkillsData = [
       },
       {
         name: "Python",
-        stars: 3,
+        stars: 4,
       },
     ],
   },
@@ -72,7 +72,7 @@ const SkillsData = [
       },
       {
         name: "Microsoft Teams",
-        stars: 5,
+        stars: 4,
       },
       {
         name: "Postman",
@@ -84,7 +84,7 @@ const SkillsData = [
       },
       {
         name: "Procreate",
-        stars: 5,
+        stars: 4,
       },
     ],
   },
