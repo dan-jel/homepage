@@ -7,28 +7,25 @@ const Card = ({ project }) => {
   return (
     <Container>
       <Padding>
-        <ImageBox>
-          <motion.img
-            src={`${project.image}`}
-            alt="project thumbnail"
-            onClick={() => {
-              window.location.href = project.url;
-            }}
-          />
+        <ImageBox target="_blank" rel="noopener noreferrer" href={project.url}>
+          <motion.img src={`${project.image}`} alt="project thumbnail" />
         </ImageBox>
-        <h4>{project.name}</h4>
+        <a target="_blank" rel="noopener noreferrer" href={project.url}>
+          {" "}
+          <h4>{project.name}</h4>
+        </a>
+
         <p>{project.info}</p>
-        <GithubIcon
-          onClick={() => {
-            window.location.href = project.github;
-          }}
-        />
+        <a target="_blank" rel="noopener noreferrer" href={project.github}>
+          {" "}
+          <GithubIcon />
+        </a>
       </Padding>
     </Container>
   );
 };
 
-const ImageBox = styled.div`
+const ImageBox = styled.a`
   position: relative;
   width: 100%;
   height: 125px;
@@ -41,6 +38,16 @@ const Padding = styled.div`
   height: 85%;
   top: 7.5%;
   left: 7.5%;
+  a {
+    text-decoration: none;
+  }
+  h4 {
+    color: black;
+    cursor: pointer;
+    :hover {
+      text-decoration: underline;
+    }
+  }
 `;
 
 const Container = styled.div`

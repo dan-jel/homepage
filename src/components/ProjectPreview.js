@@ -17,11 +17,12 @@ const ProjectPreview = () => {
             })}
           </Slider>
         </Box>
-        <ProjektLink to="/projects">Projektübersicht</ProjektLink>
       </Padding>
     </Container>
   );
 };
+
+// Solange nur 3 Projekte sind deaktiviert! Danach zwischen Box und Padding am Ende! <ProjektLink to="/projects">Projektübersicht</ProjektLink>
 
 const ProjektLink = styled(Link)`
   color: black;
