@@ -24,6 +24,9 @@ const Padding = styled.div`
   width: 80%;
   position: relative;
   left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   h1 {
     text-align: center;
   }
@@ -53,6 +56,9 @@ const Box = styled.div`
     box-shadow: 0rem;
     background-color: #6c9ff6;
   }
+  @media only screen and (max-width: 1215px) {
+    align-items: flex-start;
+  }
 `;
 
 const Container = styled.div`
@@ -69,8 +75,9 @@ const Container = styled.div`
 
 const Slider = styled.div`
   display: flex;
-  width: ${(props) => props.projectAmount * 320 + "px"};
+  width: ${(props) => props.projectAmount * 320 - 10 + "px"};
   height: auto;
+  position: relative;
 `;
 
 export default Certificates;

@@ -64,6 +64,9 @@ const Box = styled.div`
     box-shadow: 0rem;
     background-color: #6c9ff6;
   }
+  @media only screen and (max-width: 1820px) {
+    align-items: flex-start;
+  }
 `;
 
 const Slider = styled.div`
