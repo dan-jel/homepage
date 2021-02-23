@@ -4,11 +4,11 @@ const TimelineData = [
     title: "Selbststudium & Onlinekurse",
     date: "2020 - today",
     text:
-      "Da ich im Studium schon angefangen hatte Python zu lernen, vertiefte ich zunächst diese Kenntnisse mit einem umfangreichen Udemy-Kurs bei Udemy. Dieser war Ursprung vieler kleiner Projekte, wie z.B. der Automatisierung diverser Excel-Tabellen für meine Arbeit beim ASB oder einem Python-Tool um eine Verbindungsauskunft von der API des Nahverkehrsverbundes Baden-Württemberg abzufragen. Ich habe mit den unterschiedlichsten Technologien wie Docker, Nginx, MongoDB und RestAPI gearbeitet, bis ich Ende 2020 auf React gestoßen bin. Seitdem habe ich meinen Fokus auf die Front- End Entwicklung gelegt und bin neben weiteren Onlinekursen dabei, Webseiten für Freunde und Bekannte zu entwickeln.",
+      "Da ich im Studium schon angefangen hatte Python zu lernen, vertiefte ich zunächst diese Kenntnisse mit einem umfangreichen Udemy-Kurs. Dieser war Ursprung vieler kleiner Projekte, wie z.B. der Automatisierung diverser Excel-Tabellen für meine Arbeit beim ASB oder einem Python-Tool um eine Verbindungsauskunft von der API des Nahverkehrsverbundes Baden-Württemberg abzufragen. Ich habe mit den unterschiedlichsten Technologien wie Docker, Nginx, MongoDB und RestAPI gearbeitet, bis ich Ende 2020 auf React gestoßen bin. Seitdem habe ich meinen Fokus auf die Front- End Entwicklung gelegt und bin neben weiteren Onlinekursen dabei, Webseiten für Freunde und Bekannte zu entwickeln.",
   },
   {
     id: 1,
-    title: "Arbeiter-Samariter-Bund",
+    title: "Arbeiter Samariter Bund",
     date: "2020 - today",
     text:
       "In meinem MiniJob beim ASB bin ich für die sukzessive Digitalisierung von Büroprozessen verantwortlich und unterstütze die Benutzer bei allen anfallenden technischen Problemen.",
@@ -29,7 +29,7 @@ const TimelineData = [
   },
   {
     id: 4,
-    title: "Albert-Schweitzer-Schule Kassel",
+    title: "Albert Schweitzer Schule Kassel",
     date: "2009 - 2017",
     text: "Abitur mit den Leistungskursen Chemie & Kunst (Schnitt 2,7)",
   },
