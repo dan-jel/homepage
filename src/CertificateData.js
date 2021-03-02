@@ -2,6 +2,7 @@
 import DataScience from "./images/datascience.jpeg";
 import FrontEnd from "./images/frontend.jpeg";
 import BackEnd from "./images/backend.jpeg";
+import Django from "./images/django.png";
 
 // PDF Import
 import pythonPDF from "./images/pdf/python.pdf";
@@ -44,6 +45,21 @@ const CertificateData = [
       "Learn Python coding with RESTful API's using the Flask framework. Understand how to use MongoDB, Docker and Tensor flow.",
     link:
       "https://www.udemy.com/course/python-rest-apis-with-flask-docker-mongodb-and-aws-devops/",
+    pdf: "",
+    platform: "Udemy",
+    inProgress: true,
+  },
+  {
+    id: 3,
+    color: "#092E20",
+    icon: Django,
+    tag: "Full Stack Web Development",
+    name:
+      "Build websites with HTML, CSS, Bootstrap, Javascript, jQuery, Python 3, and Django!",
+    info:
+      "Understanding the different components and how they complement each other. Learn Django Routing and the Model Views structure.",
+    link:
+      "https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/",
     pdf: "",
     platform: "Udemy",
     inProgress: true,

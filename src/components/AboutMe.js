@@ -8,7 +8,7 @@ const AboutMe = () => {
       <TextBlock>
         <HeaderText>
           <h2>Hallo, ich bin Daniel -&nbsp;</h2>
-          <h2>Kreativer Kopf, Autodidakt und Coder</h2>
+          <h2>kreativer Kopf, Autodidakt und Coder</h2>
         </HeaderText>
 
         <Line />

@@ -1,6 +1,7 @@
 import soundcontainer from "./images/project_thumbnails/soundcontainer.jpeg";
 import ignite from "./images/project_thumbnails/ignite.jpeg";
 import portfolio from "./images/project_thumbnails/portfolio.jpeg";
+import keinK from "./images/project_thumbnails/keinK.jpeg";
 
 const Projects = [
   {
@@ -29,6 +30,15 @@ const Projects = [
     url: "http://h2911972.stratoserver.net:88/",
     github: "https://github.com/dan-jel/react-portfolio",
     image: portfolio,
+  },
+  {
+    id: 3,
+    name: "keinK",
+    info:
+      "Eine Website für Freunde und Bekannte, um künstlerische Projekte auszustellen und zu archivieren.",
+    url: "http://h2911972.stratoserver.net:91/",
+    github: "https://github.com/dan-jel/keinK",
+    image: keinK,
   },
 ];
 
