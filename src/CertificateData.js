@@ -7,6 +7,7 @@ import Django from "./images/django.png";
 // PDF Import
 import pythonPDF from "./images/pdf/python.pdf";
 import reactPDF from "./images/pdf/react.pdf";
+import dockerPDF from "./images/pdf/docker.pdf";
 
 const CertificateData = [
   {
@@ -45,9 +46,9 @@ const CertificateData = [
       "Learn Python coding with RESTful API's using the Flask framework. Understand how to use MongoDB, Docker and Tensor flow.",
     link:
       "https://www.udemy.com/course/python-rest-apis-with-flask-docker-mongodb-and-aws-devops/",
-    pdf: "",
+    pdf: dockerPDF,
     platform: "Udemy",
-    inProgress: true,
+    inProgress: false,
   },
   {
     id: 3,
