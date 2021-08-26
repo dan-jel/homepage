@@ -64,14 +64,19 @@ const Language = styled.div`
     font-size: 1.2rem;
   }
   .de {
+    box-shadow: 0px 1px 3px rgba(28, 41, 90, 0.4);
     height: 100%;
     padding: 5px 10px 5px 10px;
     text-decoration: none;
     background: #6d9ff6;
     border-radius: 7px;
     color: black;
+    :hover {
+      cursor: default;
+    }
   }
   .eng {
+    box-shadow: 0px 1px 3px rgba(28, 41, 90, 0.4);
     text-decoration: none;
     margin-left: 10px;
     padding: 5px 10px 5px 10px;
