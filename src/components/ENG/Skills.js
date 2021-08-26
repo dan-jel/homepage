@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import SkillCard from "./SkillCard";
 
-import SkillsData from "../SkillsData";
-import { ReactComponent as Softskills } from "../images/icons/softskills.svg";
+import SkillsData from "./SkillsData";
+import { ReactComponent as Softskills } from "../../images/icons/softskills.svg";
 
 const SoftSkillCard = () => {
   const SoftRow = ({ skills }) => {
@@ -15,10 +15,10 @@ const SoftSkillCard = () => {
     );
   };
   const SoftSkillData = [
-    ["kreativ", "analytisches Denken"],
-    ["flexibel", "intrinsisch motiviert"],
-    ["teamfähig", "wissensdurstig"],
-    ["belastbar", "anstrengungsbereit"],
+    ["creative", "analytical thinking"],
+    ["flexible", "intrinsically motivated"],
+    ["team player", "inquisitive"],
+    ["resilient", "adaptable"],
   ];
 
   return (

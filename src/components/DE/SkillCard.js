@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ReactComponent as Star } from "../images/icons/star.svg";
+import { ReactComponent as Star } from "../../images/icons/star.svg";
 
 const Entry = ({ item }) => {
   const loop = item.stars;

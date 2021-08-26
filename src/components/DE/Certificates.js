@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import CertificatesCard from "./CertificatesCard";
-import CertificateData from "../CertificateData";
+import CertificateData from "./CertificateData";
 
 const Certificates = () => {
   return (

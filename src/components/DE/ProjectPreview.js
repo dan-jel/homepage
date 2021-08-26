@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Projects from "../Projects";
+import Projects from "./Projects";
 import Card from "./ProjectPreviewCard";
-import { Link } from "react-router-dom";
 
 const ProjectPreview = () => {
   const projectAmount = Projects.length;
@@ -24,19 +23,19 @@ const ProjectPreview = () => {
 
 // Solange nur 3 Projekte sind deaktiviert! Danach zwischen Box und Padding am Ende! <ProjektLink to="/projects">Projektübersicht</ProjektLink>
 
-const ProjektLink = styled(Link)`
-  color: black;
-  cursor: pointer;
-  border-radius: 8px;
-  margin-top: 1rem;
-  padding: 5px 10px;
-  text-decoration: none;
-  :hover {
-    text-decoration: underline;
-    background: white;
-    box-shadow: 0px 2px 4px rgba(28, 41, 90, 0.4);
-  }
-`;
+// const ProjektLink = styled(Link)`
+//   color: black;
+//   cursor: pointer;
+//   border-radius: 8px;
+//   margin-top: 1rem;
+//   padding: 5px 10px;
+//   text-decoration: none;
+//   :hover {
+//     text-decoration: underline;
+//     background: white;
+//     box-shadow: 0px 2px 4px rgba(28, 41, 90, 0.4);
+//   }
+// `;
 
 const Padding = styled.div`
   width: 70%;

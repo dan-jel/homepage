@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import TimelineData from "../TimelineData";
-import Arrow from "../images/icons/arrow.jpeg";
+import TimelineData from "./TimelineData";
+import Arrow from "../../images/icons/arrow.jpeg";
 
 const Chapter = ({ entry, selected, setSelected }) => {
   const moi = entry.id === selected;
@@ -93,7 +93,7 @@ const Curriculum = () => {
   return (
     <Container>
       <Padding>
-        <h1>Lebenslauf</h1>
+        <h1>Curriculum vitae</h1>
         <Block>
           {TimelineData.map((entry, index) => {
             return (

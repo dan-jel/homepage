@@ -1,0 +1,83 @@
+import React from "react";
+import styled from "styled-components";
+import CertificatesCard from "./CertificatesCard";
+import CertificateData from "./CertificateData";
+
+const Certificates = () => {
+  return (
+    <Container>
+      <Padding>
+        <h1>Certificates & Courses</h1>
+        <Box>
+          <Slider>
+            {CertificateData.map((certi) => {
+              return <CertificatesCard key={certi.id} certi={certi} />;
+            })}
+          </Slider>
+        </Box>
+      </Padding>
+    </Container>
+  );
+};
+
+const Padding = styled.div`
+  width: 70%;
+  position: relative;
+  left: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    text-align: center;
+  }
+`;
+
+const Box = styled.div`
+  width: 100%;
+  height: 430px;
+  position: relative;
+  overflow-x: scroll;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: 0;
+    background-color: white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: 0rem;
+    background-color: #6c9ff6;
+  }
+  @media only screen and (max-width: 1830px) {
+    align-items: flex-start;
+  }
+`;
+
+const Container = styled.div`
+  width: 100%;
+  height: auto;
+  background: white;
+  padding: 3rem 0rem;
+  box-shadow: 0px 4px 4px rgba(28, 41, 90, 0.2);
+  z-index: 10;
+  h1 {
+    padding-left: 5px;
+  }
+`;
+
+const Slider = styled.div`
+  display: flex;
+  width: ${(props) => props.projectAmount * 320 - 10 + "px"};
+  height: auto;
+  position: relative;
+`;
+
+export default Certificates;

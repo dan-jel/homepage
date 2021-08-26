@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as GithubIcon } from "../images/icons/github.svg";
+import { ReactComponent as GithubIcon } from "../../images/icons/github.svg";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 

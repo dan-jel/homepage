@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import { ReactComponent as Progress } from "../images/icons/progress.svg";
-import { ReactComponent as Finished } from "../images/icons/finished.svg";
+import { ReactComponent as Progress } from "../../images/icons/progress.svg";
+import { ReactComponent as Finished } from "../../images/icons/finished.svg";
 
 const ProgressBar = ({ certi }) => {
   return (

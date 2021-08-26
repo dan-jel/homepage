@@ -1,6 +1,6 @@
-import { ReactComponent as Coding } from "./images/icons/coding.svg";
-import { ReactComponent as Infrastructure } from "./images/icons/infrastructure.svg";
-import { ReactComponent as Tools } from "./images/icons/tools.svg";
+import { ReactComponent as Coding } from "../../images/icons/coding.svg";
+import { ReactComponent as Infrastructure } from "../../images/icons/infrastructure.svg";
+import { ReactComponent as Tools } from "../../images/icons/tools.svg";
 
 const SkillsData = [
   {

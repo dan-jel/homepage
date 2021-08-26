@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import AboutMe from "../components/AboutMe";
-import Header from "../components/Header";
-import Curriculum from "../components/Curriculum";
-import Skills from "../components/Skills";
-import Certificates from "../components/Certificates";
-import ProjectPreview from "../components/ProjectPreview";
+import Header from "../components/DE/Header";
+import AboutMe from "../components/DE/AboutMe";
+import Curriculum from "../components/DE/Curriculum";
+import Skills from "../components/DE/Skills";
+import Certificates from "../components/DE/Certificates";
+import ProjectPreview from "../components/DE/ProjectPreview";
 import { motion } from "framer-motion";
 
 const HomePage = ({ NavPosition, setNavPosition }) => {

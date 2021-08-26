@@ -1,7 +1,8 @@
 import React from "react";
 import { Route, Switch } from "react-router";
 import ProjectPage from "./pages/ProjectPage";
-import HomePage from "./pages/HomePage";
+import HomePageDe from "./pages/HomePageDe";
+import HomePageEng from "./pages/HomePageEng";
 import GlobalStyle from "./globalStyles";
 
 function App() {
@@ -10,7 +11,10 @@ function App() {
       <GlobalStyle />
       <Switch>
         <Route path="/" exact>
-          <HomePage />
+          <HomePageDe />
+        </Route>
+        <Route path="/eng" exact>
+          <HomePageEng />
         </Route>
         <Route path="/projects" exact>
           <ProjectPage />
