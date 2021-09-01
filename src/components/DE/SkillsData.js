@@ -41,7 +41,7 @@ const SkillsData = [
       },
       {
         name: "Docker",
-        stars: 3,
+        stars: 4,
       },
       {
         name: "MongoDB",
@@ -53,7 +53,7 @@ const SkillsData = [
       },
       {
         name: "Rest-API",
-        stars: 3,
+        stars: 4,
       },
       {
         name: "Linux",

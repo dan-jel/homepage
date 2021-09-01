@@ -59,9 +59,16 @@ const Language = styled.div`
   position: absolute;
   right: 15%;
   top: 10px;
+  @media only screen and (max-width: 700px) {
+    position: absolute;
+    width: 100px;
+    top: -190px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   p {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .de {
     box-shadow: 0px 1px 3px rgba(28, 41, 90, 0.4);

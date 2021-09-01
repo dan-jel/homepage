@@ -14,7 +14,7 @@ const TimelineData = [
   {
     id: 2,
     title: "Computer science studies",
-    date: "2019 - 2020",
+    date: "2019 - 2021",
     text: "In the summer semester of 2019, I enrolled in a computer science course at the University of Kassel. After the initial enthusiasm, I quickly realized that the topics and their treatment were very theoretical and that I missed the immediate tinkering on a real project. Due to the corona pandemic and the social aspect of the course that was also omitted as a result, I decided to quit and take my education into my own hands.",
   },
   {

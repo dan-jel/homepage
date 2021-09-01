@@ -20,10 +20,20 @@ const Card = ({ project }) => {
           {" "}
           <GithubIcon />
         </a>
+        <Tag>{project.tag}</Tag>
       </Padding>
     </Container>
   );
 };
+
+const Tag = styled.div`
+  position: absolute;
+  bottom: 0;
+  text-align: bottom;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 1rem;
+`;
 
 const ImageBox = styled.a`
   position: relative;

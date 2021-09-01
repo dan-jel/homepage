@@ -14,7 +14,7 @@ const TimelineData = [
   {
     id: 2,
     title: "Informatik Studium",
-    date: "2019 - 2020",
+    date: "2019 - 2021",
     text: "Im Sommersemester 2019 habe ich mich für ein Informatik Studium an der Uni Kassel eingeschrieben. Nach der anfänglichen Begeisterung wurde mir schnell klar, dass die Themen und deren Behandlung sehr theoretisch waren und ich das unmittelbare Tüfteln an einem realen Projekt vermisste. Durch die Corona Pandemie und den dadurch auch noch entfallenden sozialen Aspekt des Studiums, entschied ich mich es abzubrechen und meine Bildung selbst in die Hand zu nehmen.",
   },
   {
