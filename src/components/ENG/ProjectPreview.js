@@ -44,7 +44,6 @@ const Padding = styled.div`
   left: 15%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 `;
 
 const Box = styled.div`
@@ -54,7 +53,7 @@ const Box = styled.div`
   overflow-x: scroll;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   ::-webkit-scrollbar-track {
     border-radius: 10px;
     box-shadow: 0;
@@ -69,9 +68,6 @@ const Box = styled.div`
     border-radius: 10px;
     box-shadow: 0rem;
     background-color: #6c9ff6;
-  }
-  @media only screen and (max-width: 1830px) {
-    align-items: flex-start;
   }
 `;
 
